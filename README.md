@@ -51,19 +51,27 @@ This tool answers that question by:
 
 ---
 ## Project Structure
+
+```text
 indic-asr-eval/
-├── audio/                    ← Generated MP3 files (language_sentenceID.mp3)
+│
+├── audio/
+│   └── Generated MP3 files
+│
 ├── references/
-│   └── references.json       ← Test dataset (10 sentences × 7 languages)
+│   └── references.json
+│
 ├── results/
-│   ├── report.csv            ← WER + CER scores
-│   ├── wer_heatmap.png       ← WER heatmap
-│   └── cer_heatmap.png       ← CER heatmap
-├── asr_eval.py               ← Main evaluation script
-├── generate_audio.py         ← Audio generation script
-├── requirements.txt          ← Python dependencies
-├── ADDING_LANGUAGES.md       ← Guide for adding new languages
+│   ├── report.csv
+│   ├── wer_heatmap.png
+│   └── cer_heatmap.png
+│
+├── asr_eval.py
+├── generate_audio.py
+├── requirements.txt
+├── ADDING_LANGUAGES.md
 └── README.md
+```
 
 ___
 
@@ -268,3 +276,11 @@ In the meantime, alternative options include:
 - Native speaker recordings for truly unsupported languages like Garo and Khasi
 
 See [ADDING_LANGUAGES.md](./ADDING_LANGUAGES.md) for more details on how to extend language coverage.
+
+---
+
+## Acknowledgements
+
+This project was developed during an internship at the **Centre for Open Societal Systems (COSS)** as a contribution to the **AI4I (AI for Inclusion) Core** platform.
+
+The work focuses on evaluating cross-language ASR consistency for Indic languages through automated benchmarking, WER/CER analysis, and visualization of recognition performance across languages.
